@@ -37,7 +37,7 @@ return (
 </div>
 <ul>
 
-	<Image  src={logo2} />
+	<Image  src={logo2} alt='logo2' />
 
 	<MenuLinks  information={NavBarInformation} />
 

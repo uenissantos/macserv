@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; import { Home } from '../Home/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; import { FirstPage } from '../FirstPage/FirstPage';
+import { Home } from '../Home/Home';
 function App() {
 
 	return (
@@ -7,7 +8,15 @@ function App() {
 			<Routes>
 
 
-				<Route path='/' element={<Home />} />
+				<Route element={<Home />} >
+
+					<Route path='/' element={<FirstPage />} />
+
+
+				</Route>
+
+
+
 
 
 
