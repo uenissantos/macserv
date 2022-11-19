@@ -3,7 +3,7 @@ import P from 'prop-types'
 import *  as Styled from './styles'
 
 
-export const Buttom = ({ children, click, pattern , className }) => {
+export const Button = ({ children, click, pattern , className }) => {
 	return (
 
 		<Styled.ButtomContainer pattern={pattern} className={className} onClick={click}  >
@@ -17,9 +17,9 @@ export const Buttom = ({ children, click, pattern , className }) => {
 };
 
 
-Buttom.propTypes = {
+Button.propTypes = {
 
-	children: P.node.isRequired,
+	children: P.node,
 	click: P.func,
 	pattern:P.string,
 	className: P.string
