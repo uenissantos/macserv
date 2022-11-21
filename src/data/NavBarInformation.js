@@ -29,6 +29,15 @@ export const NavBarInformation = [
 		classe: ''
 
 	},
+	{
+
+		children: 'contato ',
+		href: '',
+		newTab: false,
+		classe: ''
+
+	},
+
 
 
 ]
