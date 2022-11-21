@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 export const FirstPage = styled.div`
 ${({ theme }) => css`
 width: 100%;
-border: 2px solid red;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -15,7 +14,6 @@ bottom:25px;
 	font-size: 25px;
 	z-index: 1;
 	color: ${theme.colors.black};
-	border: 2px solid red;
 
 
 }
@@ -117,7 +115,7 @@ width:90%
 
 ${theme.breakpoints.lg}{
 .somos{
-	width: 600px;
+	width: 800px;
 
 	p{
 		padding: 10px;
@@ -128,7 +126,7 @@ ${theme.breakpoints.lg}{
 	.projetos{
 		flex-direction:row;
 		margin: 20px;
-		width: 600px;
+		width: 800px;
 	}
 
 

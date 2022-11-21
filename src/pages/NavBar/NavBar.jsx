@@ -24,7 +24,13 @@ return (
 
 <Image src={logo} alt='macServ'  />
 
+<ul>
 
+	<Image  src={logo2} alt='logo2' />
+
+	<MenuLinks  information={NavBarInformation} />
+
+</ul>
 <div  className='icones'>
 <Links  classe='whatsapp' >
 <BsWhatsapp/>
@@ -35,13 +41,7 @@ return (
   </Button>
 
 </div>
-<ul>
 
-	<Image  src={logo2} alt='logo2' />
-
-	<MenuLinks  information={NavBarInformation} />
-
-</ul>
 </Styled.NavBar>
 
 
