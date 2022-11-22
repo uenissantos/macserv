@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-
+import folder from '../../assets/folder.jpg'
 
 
 
@@ -7,11 +7,12 @@ import styled, { css } from 'styled-components';
 export const NavBar = styled.nav`
 ${({ theme, stateButton }) => css`
 width: 100%;
-height: ${theme.sizes.big};
+height: ${theme.sizes.medium};
 
 /* background-color: #d8d2ca;
  */
-
+background-image: url(${folder});
+background-size: contain;
 background-color: white;
 display: flex;
 flex-direction: row;
@@ -23,7 +24,7 @@ z-index: 90;
 img{
 height: 100%;
 width: 10rem;
-
+background-color: white;
 }
 
 
@@ -44,7 +45,8 @@ a{
 	height: 100%;
 width:50px;
 padding: 10px;
-color:${theme.colors.black}
+color:white;
+font-size: 18px;
 }
 
 
@@ -64,12 +66,15 @@ background-color: transparent;
 }
 
 ul{
-	border-radius: 10px;
 
-	background-color:white;
+	background-image: url(${folder});
+	background-repeat: no-repeat;
+	border-radius: 10px;
 	transition: 1s ;
 	position: absolute;
 	top: 7rem;
+	background-size: 100% 100%;
+
 display: flex;
 right:${stateButton ? '0' : '-40rem'} ;
 
@@ -78,10 +83,10 @@ height: 50vh;
 flex-direction: column;
 justify-content: space-evenly;
 align-items:center;
-	a{
-		font-size: 20px;
-			}
 
+li{
+	width: 170px;
+}
 
 
 	img{
@@ -123,9 +128,20 @@ img{
 
 	}
 
-
-
 }
+
+
+
+${theme.breakpoints.lg}{
+
+	svg{
+		left: 45%;
+	}
+}
+
+
+
+
 
 `}
 `;

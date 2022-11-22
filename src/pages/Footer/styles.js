@@ -1,30 +1,50 @@
 import styled, { css } from 'styled-components';
-
+import folder from '../../assets/folder.jpg'
 export const Footer = styled.div`
 ${({ theme }) => css`
-
+background-image: url(${folder});
 width: 100%;
 height: ${theme.sizes.medium};
-background-color:#d8d2ca;
 display: flex ;
 flex-direction: row;
 	padding: 21px;
-
+	color:white;
+	text-align: center;
+	align-items: center;
 img{
-height: 100%;
-width: 10%;
+height: 4rem;
+width: 8rem;
 display: none;
 }
 
 
 p{
-	font-size: 8px;
+	font-size: 15px;
+	margin: auto;
 }
 
 
 span{
-	font-size: 11px;
+	font-size: 20px;
 
 }
+
+
+${theme.breakpoints.lg}{
+img{
+	display: flex;
+}
+
+p{
+	font-size: 20px;
+}
+
+span{
+	font-size: 22px;
+}
+}
+
+
+
 `}
 `;

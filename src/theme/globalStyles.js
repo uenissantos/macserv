@@ -24,12 +24,8 @@ a{
 
 
 
-
-
-
-
 .list svg {
-color:black;
+color:white;
 
 
 }
