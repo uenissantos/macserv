@@ -2,39 +2,39 @@ export const NavBarInformation = [
 
 	{
 
-		children: 'solucoes',
+		children: 'HOME',
 		href: '',
 		newTab: false,
-		classe: ''
+		classe: '/'
 
 	}, {
 
-		children: 'materias',
+		children: 'A EMPRESA',
 		href: '',
 		newTab: false,
-		classe: ''
+		classe: '/empresa'
 
 	}, {
 
-		children: 'parceiros',
+		children: 'SERVIÇOS',
 		href: '',
 		newTab: false,
-		classe: ''
+		classe: '/servicos'
 
 	}, {
 
-		children: 'sobre MacServ',
+		children: 'ORÇAMENTOS',
 		href: '',
 		newTab: false,
-		classe: ''
+		classe: '/orcamento'
 
 	},
 	{
 
-		children: 'contato ',
+		children: 'CONTATO ',
 		href: '',
 		newTab: false,
-		classe: ''
+		classe: '/contato'
 
 	},
 

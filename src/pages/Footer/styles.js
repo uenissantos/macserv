@@ -4,7 +4,7 @@ export const Footer = styled.div`
 ${({ theme }) => css`
 
 width: 100%;
-height: ${theme.sizes.small};
+height: ${theme.sizes.medium};
 background-color:#d8d2ca;
 display: flex ;
 flex-direction: row;
