@@ -3,7 +3,7 @@ import *  as Styled from './styles'
 import { Text } from '../../components/Text';
 import { Image } from '../../components/Image';
 import iconeMac from '../../assets/iconeMac.png'
-import logo2 from '../../assets/logo2.jpg'
+import logo2 from '../../assets/logo2.png'
 
 export const Footer = () => {
 return (

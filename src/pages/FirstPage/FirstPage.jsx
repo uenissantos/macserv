@@ -9,6 +9,10 @@ import{Text} from '../../components/Text/index'
 import {Button} from '../../components/Button/Button'
 import {GiReceiveMoney} from 'react-icons/gi'
 import {MdOutlineComputer} from 'react-icons/md'
+import icone from '../../assets/icone.png'
+import icone1 from '../../assets/icone1.png'
+import icone2 from '../../assets/icone2.png'
+import{Image} from '../../components/Image/index'
 
 export const FirstPage = () => {
 return (
@@ -71,23 +75,70 @@ Contemplando diversas aréas tais como:
 
 <div className='icon'>
 
-<Text > sem taxas abusivas</Text>
+<div>
+	<Text > sem taxas abusivas</Text>
 <GiReceiveMoney/>
 
+</div>
+
+<div>
 
 <Text>sem papelada</Text>
 <MdOutlineComputer/>
 </div>
 
-<div>
+</div>
 
-<Text id='idade' >8</Text>
+<div className='idade'>
+
+<Text  > 8</Text>
 <Text as='span'> anos de experiência</Text>
 
 </div>
 
 </Styled.Sobre>
 
+
+
+
+<Styled.Solucao>
+
+<div>
+
+
+<Text as='h2'>Por que somos a solução preferida pelos clientes?</Text>
+
+<Text>Cansados da burocracia, da má gestão e da falta de transparência viemos trazer a solução a nível de serviço  o que você realmente necessita, focando na redução dos custos do  seu negoçio.</Text>
+
+</div>
+
+<div className='solucao'>
+
+
+<div> <Image alt='icone' src={icone2}/>
+
+<Text  as='h2'>Eficiência</Text>
+<Text> Oferecemos tranquilidade na organização financeira, apoio jurídico, atendimento de qualidade .</Text> </div>
+
+
+<div><Image alt='icone1' src={icone1}/>
+
+<Text as='h2' >Segurança</Text>
+<Text>Contamos com  colaboradores experientes,  e empresas privadas.</Text>
+ </div>
+
+<div>
+	<Image alt='icone2'  src={icone}/>
+
+<Text as='h2' >Transparência</Text>
+
+<Text>Total transparencia no contrato e garantia de serviço.</Text>
+</div>
+
+
+</div>
+
+</Styled.Solucao>
 
   </>
 )
