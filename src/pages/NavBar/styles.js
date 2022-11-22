@@ -9,8 +9,10 @@ ${({ theme, stateButton }) => css`
 width: 100%;
 height: ${theme.sizes.big};
 
-background-color: #d8d2ca;
+/* background-color: #d8d2ca;
+ */
 
+background-color: white;
 display: flex;
 flex-direction: row;
 flex-basis: auto;
@@ -18,7 +20,6 @@ justify-content: space-between;
 align-items: center;
 position: fixed;
 z-index: 90;
-
 img{
 height: 100%;
 width: 10rem;
@@ -43,7 +44,7 @@ a{
 	height: 100%;
 width:50px;
 padding: 10px;
-
+color:${theme.colors.black}
 }
 
 
@@ -63,8 +64,10 @@ background-color: transparent;
 }
 
 ul{
-background-color: #d8d2ca;
-	transition: 2s ;
+	border-radius: 10px;
+
+	background-color:white;
+	transition: 1s ;
 	position: absolute;
 	top: 7rem;
 display: flex;

@@ -1,156 +1,130 @@
 import styled, { css } from 'styled-components';
 
+import t from '../../assets/t.jpg'
+
 export const FirstPage = styled.div`
 ${({ theme }) => css`
 width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-
-.carrossel >p{
-bottom:25px;
-	position: absolute;
-	font-size: 25px;
-	z-index: 1;
-	color: ${theme.colors.black};
-
-
-}
-
-.carrossel{
-
- & img{
-	height: 250px;
-
-}
-
-}
-
-.somos{
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color:#d8d2ca;
-
-
-}
-p{
-padding:20px 20px  0px 20px;
-max-width: 355px;
-font-size: 16px;
-
-}
-
-
-
-
-.projetos{
-	background-color:#d8d2ca;
-display: flex;
-flex-direction: column;
+height: 90vh;
 text-align: center;
-align-items: center;
-width: 100%;
-svg{
-	margin-top: 40px;
-
-height: 100px;
-width: 100px;
-padding: 20px;
-border-radius: 50px;
-border: 2px solid ${theme.colors.ligth};
-color:${theme.colors.secundaryColor} ;
-:hover{
-	background-color: ${theme.colors.black};
-	color: ${theme.colors.ligth};
-}
-
-}
+margin-top: ${theme.sizes.big};
+background-image:url(${t}) ;
+background-repeat: no-repeat;
+background-size: cover;
 
 
-p{
 
-	margin-bottom: 20px;
-}
-
-}
-
-
-.title-grid{
-text-align: center;
-h2{
-	padding: 20px;
-	width: 350px;
-	margin: auto;
-}
-
-
-}
-
-
-.grid-container{
-	background-color:#d8d2ca;
+.apresentacao{
+	width: 100%;
+height: 90vh;
 display: grid;
-grid-template-columns: 1f;
-gap:10px;
+grid-template-columns: 1fr;
+padding: 25px;
+background-color: white;
+opacity: 0.8;
+align-items: center;
 text-align: center;
-width: ;
 
-}
 
-.iten1,
-.iten2,
-.iten3,{
-img{
+h1{
 
-width:90%
-
-}
-
+	margin: 20px  10px;
 }
 
 
-
-
-${theme.breakpoints.lg}{
-.somos{
-	width: 800px;
-
-	p{
-		padding: 10px;
-	}
-}
-
-
-	.projetos{
-		flex-direction:row;
-		margin: 20px;
-		width: 800px;
-	}
-
-
-	.grid-container{
-		grid-template-columns: 1fr 1fr;
-	}
+span{
+	font-size: 20px;
+	margin: 25px  5px;
+	color:black;
 
 }
 
 
-${theme.breakpoints.xl}{
 
-	.carrossel{
 
-& img{
-    height: 550px;
-object-fit: cover;
+
+
+}
+
+.botao{
+overflow: hidden;
+background-color:white;
+
+margin-top: 85px;
+button{
+	display: flex;
+	height: 55px;
+	width: 255px;
+align-items: center;
+justify-content: space-around;
+border-radius: 20px;
+background-color: ${theme.colors.primaryColor};
+color: black;
+font-size: 18px;
+margin: 20px;
+
+
+
+svg{
+	height: 20px;
+	width: 22px;
+}
+
+
+
+
 }
 
 }
 
-	.grid-container{
-		grid-template-columns: 1fr 1fr  1fr;
-	}
+`}
+`;
+
+
+
+
+export const Sobre = styled.div`
+${({ theme }) => css`
+width: 100%;
+height: 100vh;
+align-items: center;
+text-align: center;
+
+h2{
+	margin: 10px;
+	padding: 15px;
+}
+
+h3{
+
+color: ${theme.colors.black};
+font-size: 22px;
+}
+
+p{
+	color: gray;
+	font-size: 20px ;
+	margin: 20px;
+};
+
+.icon{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+align-items: center;
+justify-content: space-evenly;
+svg{
+
+height: 60px;
+width: 60px;
+color: gray;
+}
+
+
+
+}
+
+
 
 
 

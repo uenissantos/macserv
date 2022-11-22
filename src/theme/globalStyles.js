@@ -28,7 +28,11 @@ a{
 
 
 
+.list svg {
+color:black;
 
+
+}
 
 
 .email svg {
@@ -49,26 +53,8 @@ h1,h2{
 	color:${theme.colors.secundaryColor};
 }
 
-.divisoria{
-display: flex;
-flex-direction: row;
-text-align: center;
-padding: 20px;
 
-.divisoria1{
-	background-color: ${theme.colors.ligth};
-width: 100px;
-height:5px;
-}
 
-img{
-height: 20px;
-width: 20px;
-border:none;
-margin: -8px 10px 0 10px
-}
-
-}
 
 
 `}
