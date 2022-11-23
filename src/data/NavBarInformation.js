@@ -9,15 +9,8 @@ export const NavBarInformation = [
 
 	}, {
 
-		children: 'A EMPRESA',
-		href: '',
-		newTab: false,
-		classe: '/empresa'
-
-	}, {
-
 		children: 'SERVIÇOS',
-		href: '',
+		href: 'servicos',
 		newTab: false,
 		classe: '/servicos'
 

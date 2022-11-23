@@ -98,16 +98,39 @@ padding: 25px;
 
 
 ${theme.breakpoints.xl}{
+margin: auto;
+	.apresentacao{
+		border: 2px solid red;
+		text-align: center;
+		h1{
+			margin: 50px auto;
+width: 750px;
 
+}
+
+span{
+
+border: 2px solid red;
+font-size: 22px;
+width: 750px;
+
+}
+
+	}
 	.botao{
 		width: 50%;
 		button{
 			margin: auto;
 		}
-
 	}
 
+
+
 }
+
+
+
+
 
 
 `}

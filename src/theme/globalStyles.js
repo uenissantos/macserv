@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from "styled-components";
+import folder from '../assets/folder.jpg'
 
 export const GlobalStyles = createGlobalStyle`
 ${({ theme }) => css`
@@ -45,6 +46,7 @@ border:2px solid #B73728
 
 
 h1,h2{
+	background-image:url(${folder});
 
 	color:${theme.colors.secundaryColor};
 }
