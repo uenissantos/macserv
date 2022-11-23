@@ -27,7 +27,9 @@ return (
 
 <Text as ='h1'> Reduza os Gastos do sua empresa </Text>
 
-<Text as='span'>Somos uma agência de prestação de serviços com o objetivo de conectar empresas à profissionais.
+
+<div   className='subTitle'>
+	<Text as='span'>Somos uma agência de prestação de serviços com o objetivo de conectar empresas à profissionais.
 
 </Text  >
 
@@ -37,6 +39,8 @@ Contemplando diversas aréas tais como:
 
 
 </Text>
+
+</div>
 
 
 <div  className='botao '   >
@@ -76,13 +80,13 @@ Contemplando diversas aréas tais como:
 
 <div className='icon'>
 
-<div>
+<div >
 	<Text > sem taxas abusivas</Text>
 <GiReceiveMoney/>
 
 </div>
 
-<div>
+<div >
 
 <Text>sem papelada</Text>
 <MdOutlineComputer/>

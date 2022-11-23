@@ -11,8 +11,8 @@ height: ${theme.sizes.medium};
 
 /* background-color: #d8d2ca;
  */
-background-image: url(${folder});
-background-size: contain;
+/* background-image: url(${folder});
+background-size: contain; */
 background-color: white;
 display: flex;
 flex-direction: row;
@@ -21,11 +21,18 @@ justify-content: space-between;
 align-items: center;
 position: fixed;
 z-index: 90;
-img{
-height: 100%;
-width: 10rem;
+
+.imageNav{
+	margin: 10px;
+display: flex;
+	img{
+height: 45px;
 background-color: white;
 }
+}
+
+
+
 
 
 
@@ -81,11 +88,11 @@ right:${stateButton ? '0' : '-40rem'} ;
 width: 50vw;
 height: 50vh;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-around;
 align-items:center;
 
 li{
-	width: 170px;
+	width: 150px;
 }
 
 
@@ -93,6 +100,7 @@ li{
 		height:60px;
 object-fit: contain;
 width: 100%;
+background-color: white;
 	}
 
 
@@ -114,6 +122,7 @@ left: 40%;
 }
 
 	ul{
+		background-image: url('');
 		flex-direction: row;
 position: relative;
 		top: 0px;
@@ -126,13 +135,30 @@ img{
 	display: none;
 }
 
+a{
+
+	color: black;
+
+	&:hover{
+
+		border-bottom: 2px solid gray;
+	}
+}
+
 	}
 
 }
 
 
 
-${theme.breakpoints.lg}{
+${theme.breakpoints.xl}{
+
+	.imageNav{
+
+img{
+	height: 55px;
+}
+	}
 
 	svg{
 		left: 45%;

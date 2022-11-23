@@ -52,7 +52,14 @@ h1,h2{
 }
 
 
+h1,h2,h3,h4,h5,h6{
+	letter-spacing: 4px;
 
+}
+span,p{
+	letter-spacing: 2px;
+
+}
 
 
 `}
