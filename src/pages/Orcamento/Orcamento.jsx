@@ -1,31 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React ,{useState, useEffect} from 'react'
@@ -34,10 +8,18 @@ import {Input} from '../../components/input/index'
 import {Text} from '../../components/Text/index'
 import {TextArea} from '../../components/textArea/index'
 import { Form } from '../../components/Form/Form'
+import {Modal} from '../../components/modal/index'
+import {Button} from '../../components/Button/Button'
+
+
+
 
 export const Orcamento = () => {
 
 const [valueButton, setValueButton] = useState('ENVIAR');
+const [visible, setVisible] = useState('invisible');
+const bannerClose=()=> setVisible('invisible')
+
 
 function handleSubmit (e){
 
@@ -50,14 +32,46 @@ setValueButton('ENVIANDO...')
 
 }
 
+useEffect(() => {
+
+	return () => {
+
+setTimeout( function (){
+
+	setVisible('visible')
+
+}
+
+	,6000)
+
+	};
+}, []);
+
 
 return (
 
 <Styled.Orcamento   >
 
 
+<div   className={visible}>
+
+<div className='close'>
+<Button click={bannerClose}  > X</Button>
+
+
+</div>
+
+<Modal size={'big'}>
+
+</Modal>
+</div>
+
 
 <Text as='h2'>   SOLICITE SEU ORÇAMENTO</Text>
+
+
+
+
 
 <Form classe='form' action="https://postmail.invotes.com/send"
     method="post" id="email_form">

@@ -15,6 +15,60 @@ margin:25px auto 25px auto;
 background: transparent;
 }
 
+.visible{
+
+margin: ${theme.sizes.big} auto;
+display: flex;
+flex-direction: column;
+position: absolute;
+width: 350px;
+height: 350px;
+background-color: white;
+padding: 15px;
+
+img{
+
+height: 100%;
+background: transparent;
+
+}
+
+}
+
+.close{
+
+button{
+	font-size: 30px;
+width: 40px;
+height: 40px;
+position: absolute;
+right: 20px;
+text-align: center;
+background-color: gray;
+color: white;
+
+
+
+
+
+}
+& :hover{
+		width: 80px;
+
+	::before{
+		content: 'fechar';
+		font-size: 20px;
+	}
+}
+}
+
+
+
+.invisible{
+	display: none;
+}
+
+
 
 
 .form{
@@ -28,7 +82,7 @@ justify-content: space-around;
 & input{
 border: 1px solid ${theme.colors.ligth}  ;
 border-radius:5% ;
-box-shadow: 10px 10px 5px ${theme.colors.secundaryColor}  ;
+box-shadow: 5px 5px 5px ${theme.colors.secundaryColor}  ;
 margin: 25px auto 15px auto;
 font-size: 20px;
 border-radius: 5px;
@@ -75,7 +129,10 @@ span{
 
 ${theme.breakpoints.lg}{
 
+.visible{
+width: 500px;
 
+}
 h3{
 
 	left: 0;
@@ -90,6 +147,15 @@ h3{
 }
 
 ${theme.breakpoints.max}{
+
+
+	.visible{
+height: 600px;
+width: 800px;
+right:10px;
+}
+
+
 h3{
 width: 420px;
 }

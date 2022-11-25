@@ -167,7 +167,9 @@ margin: 1px auto;
 p{
 	color: gray;
 	font-size: 20px ;
-
+min-width: 200px;
+ max-width: 350px;
+ padding: 15px;
 };
 
 .icon{
@@ -230,7 +232,7 @@ ${theme.breakpoints.lg}{
 
 	h3,p{
 padding: 2px 85px;
-
+max-width: 800px;
 	};
 
 
