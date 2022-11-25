@@ -3,12 +3,13 @@ import P from 'prop-types'
 import *  as Styled from './styles'
 
 
-export const TextArea = ({ name, placeholder }) => {
+export const TextArea = ({ name, placeholder ,onchange }) => {
 	return (
 
 		<Styled.TextAreaContainer
 			name={name}
 			placeholder={placeholder}
+			onChange={onchange}
 		>
 
 		</Styled.TextAreaContainer>

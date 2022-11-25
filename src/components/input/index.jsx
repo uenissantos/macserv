@@ -3,7 +3,11 @@ import P from 'prop-types'
 import *  as Styled from './styles'
 
 
-export const Input = ({ type, name, placeholder, id, value }) => {
+export const Input = ({ type, name, placeholder, id, value ,click,onkeypress ,disabled='',onchange}) => {
+
+	let visible = disabled==='disabled'?'disabled'  :  ""
+
+
 	return (
 
 		<Styled.InputContainer
@@ -12,6 +16,10 @@ export const Input = ({ type, name, placeholder, id, value }) => {
 			Type={type}
 			id={id}
 			value={value}
+			onClick={click}
+			disabled={visible}
+			onkeypress={onkeypress}
+			onChange={onchange}
 		>
 
 		</Styled.InputContainer>
@@ -25,6 +33,6 @@ Input.propTypes = {
 	name: P.string,
 	placeholder: P.string,
 	id: P.string,
-	value: P.string
-
+	value: P.string,
+	click:P.func
 }

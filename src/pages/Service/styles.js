@@ -44,9 +44,8 @@ font-weight: lighter;
 ${theme.breakpoints.lg}{
 .servicos{
 flex-direction: row;
-justify-content:space-between;
+justify-content:space-evenly;
 overflow: hidden;
-border: 5px solid red;
 height: 115vh;
 }
 
@@ -68,23 +67,25 @@ width: 150px;
 
 
 }
-}
 
 ${theme.breakpoints.xl}{
+
 
 	.images{
 
 			grid-template-columns: 1fr  1fr;
+			img{
+				height: 250px;
+width: 250px;
+
+			}
 
 	}
 }
 
 
 ${theme.breakpoints.lg}{
-.servicos{
-		justify-content:space-evenly;
 
-}
 }
 
 

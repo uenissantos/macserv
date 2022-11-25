@@ -11,6 +11,7 @@ flex-direction: row;
 	color:white;
 	text-align: center;
 	align-items: center;
+	bottom: 1px;
 img{
 height: 6rem;
 width: 8rem;
