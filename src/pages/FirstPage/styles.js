@@ -364,7 +364,12 @@ h2{
 	width:80% ;
 	margin: 25px auto;
 }
+span{
+font-size: 20px;
+letter-spacing: 2px;
+margin-right: 40%;
 
+}
 
 .item{
 	background-color: ${theme.colors.ligth};
@@ -387,6 +392,8 @@ p{
 	margin: 1px auto;
 	width: 2vw;
 }
+
+
 }
 
 }
