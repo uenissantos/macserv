@@ -13,6 +13,17 @@ import icone from '../../assets/icone.png'
 import icone1 from '../../assets/icone1.png'
 import icone2 from '../../assets/icone2.png'
 import{Image} from '../../components/Image/index'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import {AiFillAccountBook} from 'react-icons/ai'
+import {AiFillAlert} from 'react-icons/ai'
+import {AiFillAlipayCircle} from 'react-icons/ai'
+import {AiFillAlipaySquare} from 'react-icons/ai'
+
+
+
+
+
 
 export const FirstPage = () => {
 return (
@@ -27,7 +38,9 @@ return (
 
 <Text as ='h1'> Reduza os Gastos do sua empresa </Text>
 
-<Text as='span'>Somos uma agência de prestação de serviços com o objetivo de conectar empresas à profissionais.
+
+<div   className='subTitle'>
+	<Text as='span'>Somos uma agência de prestação de serviços com o objetivo de conectar empresas à profissionais.
 
 </Text  >
 
@@ -37,6 +50,8 @@ Contemplando diversas aréas tais como:
 
 
 </Text>
+
+</div>
 
 
 <div  className='botao '   >
@@ -76,13 +91,13 @@ Contemplando diversas aréas tais como:
 
 <div className='icon'>
 
-<div>
+<div >
 	<Text > sem taxas abusivas</Text>
 <GiReceiveMoney/>
 
 </div>
 
-<div>
+<div >
 
 <Text>sem papelada</Text>
 <MdOutlineComputer/>
@@ -90,10 +105,57 @@ Contemplando diversas aréas tais como:
 
 </div>
 
-<div className='idade'>
+<div className='carousel'>
 
-<Text  > 8</Text>
-<Text as='span'> anos de experiência</Text>
+<Text as='h2'>  Nossos Parceiros</Text>
+<Text> Trabalhamos com foco no resultado para que possamos melhorar nosso desempenho e produtividade. Antenados com o mercado de trabalho e sua evolução, estamos sempre em busca da excelência.</Text>
+
+
+<Carousel
+
+autoPlay={true}
+autoFocus={true}
+centerMode={true}
+infiniteLoop={true}
+showStatus={false}
+centerSlidePercentage={30}
+interval={4000}
+>
+                <div  className='item'>
+
+			<AiFillAccountBook/>
+			<p> title</p>
+
+                </div>
+                <div className='item'>
+			 <AiFillAlert/>
+<p> title</p>
+                </div>
+                <div className='item'>
+			 <AiFillAlipayCircle/>
+			 <p> title</p>
+
+                </div>
+
+
+                <div className='item'>
+			 <AiFillAlipaySquare/>
+			 <p> title</p>
+
+                </div>
+
+			 <div className='item'>
+			 <AiFillAlert/>
+			 <p> title</p>
+
+                </div>
+                <div className='item'>
+			 <AiFillAlipayCircle/>
+			 <p> title</p>
+
+                </div>
+
+            </Carousel>
 
 </div>
 
@@ -139,7 +201,81 @@ Contemplando diversas aréas tais como:
 
 </div>
 
+<div className='carousel'>
+
+<Text as='h2'> Clientes</Text>
+<Text> A terceirização de mão de obra é uma prática usual em diversos tipos de organizações. Atualmente, é possível terceirizar quase todos os serviços, desde portaria, limpeza e segurança, passando pela atuação em transporte e logística até contabilidade, entre outras áreas. A conotação de praticidade em processos e redução de custos diversos é ponto comum para quem opta por essa modalidade.</Text>
+
+
+<Text>  Você já conta com serviços terceirizados na sua empresa?
+</Text>
+
+<Text as='span'>Fale com a MacServ !</Text>
+<Carousel
+
+autoPlay={true}
+autoFocus={true}
+centerMode={true}
+infiniteLoop={true}
+showStatus={false}
+centerSlidePercentage={35}
+>
+                <div  className='item'>
+
+			<AiFillAccountBook/>
+			<p> title</p>
+
+                </div>
+                <div className='item'>
+			 <AiFillAlert/>
+<p> title</p>
+                </div>
+                <div className='item'>
+			 <AiFillAlipayCircle/>
+			 <p> title</p>
+
+                </div>
+
+
+                <div className='item'>
+			 <AiFillAlipaySquare/>
+			 <p> title</p>
+
+                </div>
+
+			 <div className='item'>
+			 <AiFillAlert/>
+			 <p> title</p>
+
+                </div>
+                <div className='item'>
+			 <AiFillAlipayCircle/>
+			 <p> title</p>
+
+                </div>
+
+            </Carousel>
+
+</div>
+
+
+
 </Styled.Solucao>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </>
 )

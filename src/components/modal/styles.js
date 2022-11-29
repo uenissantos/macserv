@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
-
+import bannerM from '../../assets/bannerM.png'
+import bannerWeb from '../../assets/bannerWeb.png'
 
 
 const Sizes = {
@@ -18,8 +19,8 @@ const Sizes = {
 
 
 	big: () => css`
-	height:60% ;
-width:95%;
+	height:100% ;
+width:100%;
 	`,
 
 }
@@ -31,24 +32,17 @@ ${({ theme, size }) => css`
 border:3px solid ${theme.colors.ligth};
 box-shadow: 5px  5px  20px  ${theme.colors.secundaryColor}   ;
 ${Sizes[size]};
+background-image: url(${bannerM});
+background-size: cover;
+background-repeat: no-repeat;
+margin: auto;
 
 
 
+${theme.breakpoints.lg}{
+background-image: url(${bannerWeb});
 
-
-
-
-/* .modal:hover{
-background-color:red ;
-	box-shadow:
-                1px 1px #53a7ea,
-                2px 2px #53a7ea,
-                3px 3px #53a7ea;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-} */
-
-
+}
 
 `}
 `;

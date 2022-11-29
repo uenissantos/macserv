@@ -17,7 +17,7 @@ export const NavBarInformation = [
 	}, {
 
 		children: 'ORÇAMENTOS',
-		href: '',
+		href: 'orcamento',
 		newTab: false,
 		classe: '/orcamento'
 
@@ -25,7 +25,7 @@ export const NavBarInformation = [
 	{
 
 		children: 'CONTATO ',
-		href: '',
+		href: 'contato',
 		newTab: false,
 		classe: '/contato'
 

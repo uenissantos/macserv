@@ -47,12 +47,19 @@ border:2px solid #B73728
 
 h1,h2{
 	background-image:url(${folder});
-
 	color:${theme.colors.secundaryColor};
+	border-radius: 8px;
 }
 
 
+h1,h2,h3,h4,h5,h6{
+	letter-spacing: 4px;
 
+}
+span,p{
+	letter-spacing: 2px;
+
+}
 
 
 `}

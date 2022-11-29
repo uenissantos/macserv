@@ -6,9 +6,9 @@ import t from '../../assets/t.jpg'
 export const FirstPage = styled.div`
 ${({ theme }) => css`
 width: 100%;
-height: 60vh;
+height: 90vh;
 text-align: center;
-margin-top: ${theme.sizes.big};
+margin-top: ${theme.sizes.medium};
 background-image:url(${t}) ;
 background-repeat: no-repeat;
 background-size: cover;
@@ -17,9 +17,7 @@ background-size: cover;
 
 .apresentacao{
 	width: 100%;
-height: 60vh;
-display: grid;
-grid-template-columns: 1fr;
+height: 90vh;
 padding: 25px;
 background-color: white;
 opacity: 0.8;
@@ -30,19 +28,20 @@ text-align: center;
 h1{
 
 	margin: 20px  10px;
+	max-width: 800px;
 }
 
-
-span{
+.subTitle{
+	margin: auto;
+min-width: 300px;
+max-width: 700px;
+	span{
 	font-size: 20px;
 	margin: 25px  5px;
 	color:black;
 
 }
-
-
-
-
+}
 
 
 }
@@ -61,17 +60,18 @@ button{
 align-items: center;
 justify-content: space-around;
 border-radius: 20px;
-background-color: red;
 color: white;
 font-size: 18px;
+letter-spacing: 2px;
 margin: 5px;
 background-image: url(${folder});
 
 
 
 svg{
-	height: 20px;
-	width: 22px;
+	height: 40px;
+	width: 42px;
+	margin: 10px;
 }
 
 }
@@ -80,6 +80,11 @@ svg{
 
 
 ${theme.breakpoints.lg}{
+height: 60vh;
+
+.apresentacao{
+	height: 60vh;
+}
 
 h1{
 
@@ -98,26 +103,24 @@ padding: 25px;
 
 
 ${theme.breakpoints.xl}{
+
 margin: auto;
+
 	.apresentacao{
-		border: 2px solid red;
 		text-align: center;
 		h1{
-			margin: 50px auto;
-width: 750px;
+			margin: 40px auto;
+		}
+.subTitle{
+
+margin: 1px auto;
 
 }
-
-span{
-
-border: 2px solid red;
-font-size: 22px;
-width: 750px;
-
-}
-
 	}
 	.botao{
+		background-color: transparent;
+		margin: 10px auto;
+
 		width: 50%;
 		button{
 			margin: auto;
@@ -141,28 +144,36 @@ width: 750px;
 
 export const Sobre = styled.div`
 ${({ theme }) => css`
+
 width: 100%;
 align-items: center;
 text-align: center;
 
 h2{
-	margin: 10px;
-	padding: 15px;
+	margin: 2rem  1px;
+	padding: 5px;
+
 }
 
 h3{
 
 color: ${theme.colors.black};
 font-size: 22px;
+ min-width: 300px;
+ max-width: 600px;
+margin: 1px auto;
 }
 
 p{
 	color: gray;
 	font-size: 20px ;
-	margin: 20px;
+min-width: 200px;
+ max-width: 350px;
+ padding: 15px;
 };
 
 .icon{
+	margin: 20px;
 
 	display: flex;
 	flex-direction: column;
@@ -191,57 +202,127 @@ p{
 
 }
 
-.idade{
-
-width: 250px;
-height: 250px;
-border:  2px dashed ${theme.colors.secundaryColor};
-opacity: 0.9;
-margin:  15px auto ;
-
- & :nth-child(1){
-font-size: 80px;
-left: 0px;
-color: gray;
-right: 1px;
 
 
- &:hover{
-	color:${theme.colors.black};
+.carousel{
+h2{
+	width:80% ;
+	margin: 25px auto;
+}
 
+
+.item{
+	background-color: ${theme.colors.ligth};
+
+border: 2px solid gray;
+border-radius: 20px;
+margin: 20px;
+overflow: hidden;
+height: 10vh;
+
+svg{
+height: 100%;
+width: 100%;
+border-radius: 50px;
+
+}
+p{
+	font-size: 18px;
+	color:white;
+	margin: 1px auto;
+	width: 2vw;
 }
 }
 
 }
+
 
 
 
 
 ${theme.breakpoints.lg}{
 
+h2{
+	width: 300px;
+	margin-left: 25px;
+}
+
 	h3,p{
 padding: 2px 85px;
-
+max-width: 800px;
 	};
 
+	.carousel{
 
+.item{
+width: 20vw;
+}
+}
 }
 
 
 ${theme.breakpoints.xl}{
+
+
+h2{
+	width: 600px;
+	margin:4rem auto;
+}
+
+h3{
+	margin: 20px auto;
+}
+
+
+p{
+	width: 800px;
+	margin: 0px auto;
+}
+
 .icon{
+	width: 800px;
 		flex-direction: row;
+		margin: 10px auto;
+
+ & p{
+	margin: 25px auto;
+     width: 300px;
+	letter-spacing: 5px;
+}
+
+
 svg{
 
-	height: 150px;
-	width: 150px;
+	height: 110px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+
+
+
+
+}
+
+.carousel{
+
+width:80%;
+margin: 25px auto;
+.item{
+	border: 2px  solid ${theme.colors.secundaryColor};
+
+height: 10vw;
+width: 18vw;
+svg{
+height: 70%;
+
+}
+
 }
 }
 
-
-
-
 }
+
 
 `}
 `;
@@ -265,6 +346,7 @@ h2{
 	font-size: 25px;
 	padding: 15px;
 	margin: 15px;
+
 }
 
 
@@ -276,9 +358,48 @@ margin: 15px;
 }
 
 
+
+.carousel{
+h2{
+	width:80% ;
+	margin: 25px auto;
+}
+
+
+.item{
+	background-color: ${theme.colors.ligth};
+
+border: 2px solid gray;
+border-radius: 20px;
+margin: 20px;
+overflow: hidden;
+height: 10vh;
+
+svg{
+height: 100%;
+width: 100%;
+border-radius: 50px;
+
+}
+p{
+	font-size: 18px;
+	color:white;
+	margin: 1px auto;
+	width: 2vw;
+}
+}
+
+}
+
+
+
 ${theme.breakpoints.lg}{
 img{
 	height: 175px;
+}
+h2{
+	width: 600px;
+	margin: 25px auto ;
 }
 
 h2,p{
@@ -287,6 +408,16 @@ h2,p{
 .solucao{
 display: flex;
 flex-direction: column;}
+}
+
+
+
+
+.carousel{
+
+.item{
+width: 20vw;
+}
 }
 
 }
@@ -313,5 +444,92 @@ h2,p{
 
 }
 
+
+
+.carousel{
+
+width:80%;
+margin: 25px auto;
+.item{
+	border: 2px  solid ${theme.colors.secundaryColor};
+
+height: 10vw;
+width: 18vw;
+svg{
+height: 70%;
+
+}
+
+}
+}
+
 `}
 `;
+
+
+
+
+
+
+
+
+
+/*
+
+${theme.breakpoints.lg}{
+.caroucel{
+h2{
+
+width: 300px;
+margin-left: 25px;
+
+
+
+}
+
+.item{
+
+		svg{
+height: 50%;
+width: 50%;
+
+}
+}
+}
+
+
+}
+
+
+
+${theme.breakpoints.xl}{
+
+.caroucel{
+h2{
+
+width: 400px;
+letter-spacing: 15px;
+margin-left: 50px;
+margin-top: 50px;
+font-size: 22px;
+
+}
+
+.item{
+justify-content: center;
+align-items: center;
+color: white;
+width: 60%;
+	svg{
+height: 40%;
+width: 40%;
+color: black;
+}
+}
+
+
+}
+
+
+
+ */

@@ -3,7 +3,7 @@ import { MenuLinks } from '../../components/navBar/menu';
 import *  as Styled from './styles'
 import { NavBarInformation } from '../../data/NavBarInformation';
 import {Image}from '../../components/Image/index'
-import  logo from '../../assets/logo.png'
+import  iconeMac from '../../assets/iconeMac.png'
 import  logo2 from '../../assets/logo2.jpg'
 
 import{BsWhatsapp} from 'react-icons/bs'
@@ -21,8 +21,11 @@ const handleButton =()=> setStateButton(!stateButton)
 return (
 <>
 <Styled.NavBar  stateButton={stateButton} >
+<div  className='imageNav'>
+<Image src={iconeMac} alt='macServ'  />
+<Image  src={logo2} alt='logo2' />
 
-<Image src={logo} alt='macServ'  />
+</div>
 
 <ul>
 

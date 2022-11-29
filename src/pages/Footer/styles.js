@@ -4,15 +4,16 @@ export const Footer = styled.div`
 ${({ theme }) => css`
 background-image: url(${folder});
 width: 100%;
-height: ${theme.sizes.medium};
+height: ${theme.sizes.big};
 display: flex ;
 flex-direction: row;
 	padding: 21px;
 	color:white;
 	text-align: center;
 	align-items: center;
+	bottom: 1px;
 img{
-height: 4rem;
+height: 6rem;
 width: 8rem;
 display: none;
 }
@@ -20,7 +21,7 @@ display: none;
 
 p{
 	font-size: 15px;
-	margin: auto;
+	margin:5px auto;
 }
 
 
