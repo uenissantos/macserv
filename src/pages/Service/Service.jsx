@@ -5,19 +5,112 @@ import {Text} from '../../components/Text/index'
 import servico1 from '../../assets/servico1.png'
 import servico2 from '../../assets/servico2.png'
 import servico3 from '../../assets/servico3.png'
-import servico4 from '../../assets/servico4.png'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-import servico6 from '../../assets/servico6.png'
-import servico7 from '../../assets/servico7.png'
-import servico8 from '../../assets/servico8.png'
-import servico9 from '../../assets/servico9.png'
-
-
+import { Carousel } from 'react-responsive-carousel';
 export const Service = () => {
+
+/*
+const wheell=()=>{
+
+document.querySelector('#items')
+.addEventListener('wheel', event =>{
+	event.deltaY >0 ? event.target.scrollBy(300,0):event.target.scrollBy(-300,0);
+})
+
+}
+
+useEffect(() => {
+	return () => {
+
+		wheell()
+	};
+},); */
+
 return (
 
 <Styled.Service>
-<Image/>
+
+{/* <div  id='items-wrapper'>
+
+<div id='items'>
+
+	 <div >
+                    <Image src={servico1} alt='image1'/>
+                </div>
+
+                <div  className='item' >
+                    <Image src={servico2} alt='image2' />
+                </div>
+
+
+		<div className='item'   >
+                    <Image src={servico3} alt='servico3'/>
+                </div>
+
+
+			 <div className='item'>
+                    <Image src={servico1} alt='image1'/>
+                </div>
+
+                <div  className='item' >
+                    <Image src={servico2} alt='image2' />
+                </div>
+
+
+		<div className='item'   >
+                    <Image src={servico3} alt='servico3'/>
+                </div>
+
+
+</div>
+
+
+</div> */}
+
+
+<div className='slider'>
+
+<Carousel
+
+autoPlay={true}
+autoFocus={true}
+centerMode={true}
+infiniteLoop={true}
+showStatus={false}
+>
+                <div>
+			 <Image src={servico1} alt='image1'/>
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+			 <Image src={servico2} alt='image2' />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+			 <Image src={servico3} alt='servico3'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+
+
+                <div>
+			 <Image src={servico1} alt='image1'/>
+                    <p  id='te' className="legend">Legend 1</p>
+                </div>
+                <div>
+			 <Image src={servico2} alt='image2' />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+			 <Image src={servico3} alt='servico3'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+
+
+            </Carousel>
+</div>
+
+
 
 <div  className='servicos'>
 <div >
@@ -62,9 +155,8 @@ return (
 
 </div>
 
-
+{/*
 <div className='images'>
-
 
 
 	<Image src={servico1} alt='servico1' />
@@ -80,9 +172,7 @@ return (
 
 <Image src={servico6} alt='servico6' />
 
- </div>
-
-
+ </div> */}
 
 </div>
 

@@ -47,8 +47,8 @@ border:2px solid #B73728
 
 h1,h2{
 	background-image:url(${folder});
-
 	color:${theme.colors.secundaryColor};
+	border-radius: 8px;
 }
 
 

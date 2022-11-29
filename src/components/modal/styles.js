@@ -40,7 +40,6 @@ margin: auto;
 
 
 ${theme.breakpoints.lg}{
-
 background-image: url(${bannerWeb});
 
 }
