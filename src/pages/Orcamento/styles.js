@@ -7,11 +7,13 @@ ${({ theme }) => css`
 width: 100%;
 text-align: center;
 margin-top: ${theme.sizes.big};
-height: 100vh;
+height: 90vh;
+
 h2{
+
 width: 350px;
 font-size: 30px;
-margin:25px auto 25px auto;
+margin:125px auto 25px auto;
 background: transparent;
 }
 
@@ -128,6 +130,8 @@ span{
 
 
 ${theme.breakpoints.lg}{
+
+
 
 .visible{
 width: 500px;

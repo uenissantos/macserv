@@ -61,6 +61,8 @@ pointer-events: none;
 
 
 .slider{
+
+
 height: 350px;
 img{
 
@@ -76,7 +78,7 @@ overflow: hidden;
 }
 
 h2{
-margin: 20px auto;
+margin: 40px auto;
 }
 
 p{

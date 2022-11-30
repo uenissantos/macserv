@@ -83,13 +83,20 @@ ${theme.breakpoints.lg}{
 height: 60vh;
 
 .apresentacao{
+
+	margin-top: 80px;
 	height: 60vh;
-}
+
 
 h1{
-
+	margin: 250px  10px;
 	padding: 25px 150px;
 }
+}
+
+
+
+
 
 
 .botao{
@@ -241,10 +248,11 @@ p{
 
 
 ${theme.breakpoints.lg}{
-
+margin-top: 80px;
 h2{
 	width: 300px;
-	margin-left: 25px;
+margin-left: 25px;
+
 }
 
 	h3,p{
@@ -266,7 +274,7 @@ ${theme.breakpoints.xl}{
 
 h2{
 	width: 600px;
-	margin:4rem auto;
+	margin:8rem auto;
 }
 
 h3{
@@ -276,7 +284,7 @@ h3{
 
 p{
 	width: 800px;
-	margin: 0px auto;
+	margin: 25px auto;
 }
 
 .icon{
@@ -445,7 +453,7 @@ justify-content: space-around;
 text-align: center;
 
 h2,p{
-	margin: auto;
+	margin:25px auto;
 
 }
 

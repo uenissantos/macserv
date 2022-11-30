@@ -44,8 +44,9 @@ background-color: white;
 	height: ${theme.sizes.big};
 
 
-
 }
+
+
 
 
 a{
@@ -117,9 +118,13 @@ svg{
 position: fixed;
 bottom: 10vh;
 height: 70px;
-left: 40%;
+width: 70px;
+right: 10px;
+
 
 }
+
+
 
 	ul{
 		background-image: url('');
@@ -160,9 +165,7 @@ img{
 }
 	}
 
-	svg{
-		left: 45%;
-	}
+
 }
 
 
